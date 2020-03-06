@@ -32,8 +32,11 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
-}
+    line-height: 1;
+background-image: url(/assets/person-playing-sun-burst-electric-bass-guitar-in-bokeh-96380.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50% 50%;}
 ol, ul {
 	list-style: none;
 }
@@ -54,17 +57,26 @@ table {
 .content{
     width: 50%;
 }
-
+.header{
+    display: flex;
+    justify-content: center;
+}
 .team-section{
     overflow: hidden;
     text-align: center;
-    background: #34495e;
-    padding: 60px;
+    /* background: #34495e; */
+    
+    /* width: 75%; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
 }
 .team-section h1{
     text-transform: uppercase;
     margin-bottom: 60px;
-    color: white;
+    color: #00C7C7
+    ;
     font-size: 40px;
 }
 .border{
@@ -72,16 +84,21 @@ table {
     margin: auto;
     width: 160px;
     height: 3px;
-    background: #3498db;
+    background: #FFFFFF
+
+    ;
     margin-bottom: 40px;
 }
 .ps{
-    margin-bottom: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
 }
 .ps a {
     display: inline-block;
     margin: 0 30px;
-    width: 160px;
+    width: 150px;
     overflow: hidden;
     border-radius: 50%;
 }
@@ -91,15 +108,20 @@ table {
     filter: grayscale(100%);
     transition: 0.4s all;
 }
+.thumbnail{
+    width:150px;
+    height: 150px;
+    
+}
 
 .ps a:hover > img{
     filter: none;
 }
 
 .section{
-    width: 600px;
+    
     height: 0;
-    margin: auto;
+    
     font-size: 20px;
     color: white;
     text-align: justify;
@@ -108,7 +130,11 @@ table {
 .section:target{
     height: auto;
 }
-
+.icons{
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+}
 .name{
     display: block;
     margin-bottom: 30px;
@@ -116,3 +142,52 @@ table {
     text-transform: uppercase;
     font-size: 22px;
 }
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bio {
+   margin: auto;
+   width: auto;
+}
+
+.bio p{
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    margin: auto;
+}
+ @media only screen and (max-width: 500px) {
+  .thumbnail{
+      width: 100px;
+  }
+  .ps a img{
+    width: 50%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+    height: auto;
+}
+.ps a{
+    margin:0;
+}
+  
+
+    
+  } 
+@media only screen and (max-width: 800px) {
+  
+  
+    
+  }
+  
+/* @media only screen and (min-width: 1000px) {
+    .ps a {
+        display: inline-block;
+        margin: 0 30px;
+        width: 100px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+  } */
