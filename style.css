@@ -24,7 +24,9 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    max-width: 100%;
+    
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -32,6 +34,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+   
     line-height: 1;
 background-image: url(/assets/person-playing-sun-burst-electric-bass-guitar-in-bokeh-96380.jpg);
 background-size: cover;
@@ -60,6 +63,7 @@ table {
 .header{
     display: flex;
     justify-content: center;
+    margin-top: 100px;
 }
 .team-section{
     overflow: hidden;
@@ -117,7 +121,9 @@ table {
 .ps a:hover > img{
     filter: none;
 }
-
+.spotify{
+    background-color: white;
+}
 .section{
     
     height: 0;
@@ -130,10 +136,15 @@ table {
 .section:target{
     height: auto;
 }
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+ }
 .icons{
     height: 100px;
     width: 100px;
     margin-top: 50px;
+ 
 }
 .name{
     display: block;

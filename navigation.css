@@ -1,0 +1,80 @@
+.main-nav {
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-evenly;
+    background-color: rgba(28,28,28,0.73);
+    height: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+
+.main-nav .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 43vw;
+}
+.main-nav .title img {
+    height: 8vh;
+    margin: 0px 16px 0px;
+}
+.main-nav .title h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: Poppins;
+}
+
+.main-nav .title h1 a {
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+}
+.main-nav .title h1 a:hover {
+    color: rgba(140,140,140,0.73);
+}
+.main-nav .title h1 a:active {
+    color: white;
+}
+.main-nav .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ 
+    justify-content: space-evenly;
+    
+    
+}
+.main-nav .links a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    
+    font-weight: bolder;
+    font-family: Poppins;
+    padding: 15px;
+    
+}
+
+.main-nav .links a:hover {
+    color: rgba(140,140,140,0.73);
+}
+.main-nav .links a:active {
+    color: white;
+}
+
+
+@media (max-width: 1000px) {
+    .main-nav .title h1 {
+        font-size: 1.5rem;
+        margin-left: 30px;
+}
+.main-nav .links a {
+
+    font-size: 1.0rem;
+}
+   
+
+}
