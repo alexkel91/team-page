@@ -1,0 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    max-width: 100%;
+    
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+   
+    line-height: 1;
+background-image: url(/assets/person-playing-sun-burst-electric-bass-guitar-in-bokeh-96380.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50% 50%;}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.content{
+    width: 50%;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.team-section{
+    overflow: hidden;
+    text-align: center;
+    /* background: #34495e; */
+    
+    /* width: 75%; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.team-section h1{
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: #00C7C7
+    ;
+    font-size: 40px;
+}
+.border{
+    display:block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: #FFFFFF
+
+    ;
+    margin-bottom: 40px;
+}
+.ps{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+.ps a {
+    display: inline-block;
+    margin: 0 30px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.ps a img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+.thumbnail{
+    width:150px;
+    height: 150px;
+    
+}
+
+.ps a:hover > img{
+    filter: none;
+}
+.spotify{
+    background-color: white;
+}
+.section{
+    
+    height: 0;
+    
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    overflow: hidden;
+}
+.section:target{
+    height: auto;
+}
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+ }
+.icons{
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+ 
+}
+.name{
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bio {
+   margin: auto;
+   width: auto;
+}
+
+.bio p{
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    margin: auto;
+}
+ @media only screen and (max-width: 500px) {
+  .thumbnail{
+      width: 100px;
+  }
+  .ps a img{
+    width: 50%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+    height: auto;
+}
+.ps a{
+    margin:0;
+}
+  
+
+    
+  } 
+@media only screen and (max-width: 800px) {
+  
+  
+    
+  }
+  
+/* @media only screen and (min-width: 1000px) {
+    .ps a {
+        display: inline-block;
+        margin: 0 30px;
+        width: 100px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+  } */
